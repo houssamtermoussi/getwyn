@@ -53,6 +53,20 @@ onMounted(() => {
       scrub: 3
     }
   })
+
+  // Hero to About Parallax Effect
+  gsap.to(".hero-parallax-wrapper", {
+    y: "40%",
+    opacity: 0.3,
+    scale: 0.9,
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".about-section",
+      start: "top bottom",
+      end: "top top",
+      scrub: true
+    }
+  })
 })
 
 onUnmounted(() => {
@@ -68,8 +82,10 @@ onUnmounted(() => {
     <div class="floating-bg-2 fixed bottom-[10%] right-[5%] w-[30vw] h-[30vw] rounded-full bg-accent/5 blur-[100px] pointer-events-none z-0"></div>
 
     <div class="relative z-10 flex flex-col gap-0">
-      <Hero />
-      <div class="relative z-20 bg-background shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
+      <div class="hero-parallax-wrapper relative z-0">
+        <Hero />
+      </div>
+      <div class="relative z-20 bg-background shadow-[0_-50px_100px_rgba(0,0,0,0.9)] -mt-[20vh]">
         <About />
       </div>
       <div class="relative z-10 -mt-20 pt-20">
