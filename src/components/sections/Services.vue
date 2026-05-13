@@ -1,0 +1,80 @@
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+import gsap from 'gsap'
+
+const services = [
+  {
+    title: 'Web Development',
+    description: 'Modern, fast, and responsive websites built with cutting-edge technologies. From landing pages to complex web applications.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>'
+  },
+  {
+    title: 'Mobile Applications',
+    description: 'Native and cross-platform mobile apps designed for seamless user experiences on iOS and Android devices.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>'
+  },
+  {
+    title: 'Desktop / Software',
+    description: 'Robust, scalable desktop applications and custom software solutions tailored to your specific business operations.',
+    icon: '<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>'
+  }
+]
+
+const cardsRef = ref<HTMLElement[]>([])
+
+onMounted(() => {
+  cardsRef.value.forEach((card, index) => {
+    // Parallax effect on scroll
+    gsap.to(card, {
+      y: (index + 1) * -40,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".services-section",
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true
+      }
+    })
+
+    // Reveal animation
+    gsap.fromTo(card,
+      { opacity: 0, y: 50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+        }
+      }
+    )
+  })
+})
+</script>
+
+<template>
+  <section class="services-section py-32 px-6 relative bg-surface/10">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-24 text-center">Services.</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
+        <div 
+          v-for="(service, index) in services" 
+          :key="index"
+          ref="cardsRef"
+          class="group bg-surface p-10 rounded-2xl border border-white/5 hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] relative overflow-hidden flex flex-col"
+        >
+          <div class="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          
+          <div class="text-accent mb-6" v-html="service.icon"></div>
+          <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent transition-colors duration-300">{{ service.title }}</h3>
+          <p class="text-secondary leading-relaxed font-light mt-auto">
+            {{ service.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
