@@ -42,17 +42,17 @@ onMounted(() => {
       }
     )
     
-    // Parallax on image inside card
+    // Stronger Parallax on image inside card
     const img = card.querySelector('.portfolio-img')
     if (img) {
       gsap.to(img, {
-        y: "15%",
-        ease: "none",
+        y: "25%",
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: card,
           start: "top bottom",
           end: "bottom top",
-          scrub: true
+          scrub: 1.5
         }
       })
     }
@@ -89,7 +89,7 @@ onMounted(() => {
           
           <!-- Content -->
           <div>
-            <h3 class="text-2xl font-semibold mb-3 text-white group-hover:text-accent transition-colors duration-300">{{ project.title }}</h3>
+            <h3 class="text-2xl font-semibold mb-3 text-white group-hover:text-accent group-hover:drop-shadow-[0_0_8px_rgba(239,68,68,0.8)] transition-all duration-300">{{ project.title }}</h3>
             <p class="text-secondary font-light text-sm mb-4 leading-relaxed">
               {{ project.desc }}
             </p>
@@ -97,7 +97,7 @@ onMounted(() => {
               <span 
                 v-for="(tech, i) in project.tech" 
                 :key="i"
-                class="px-3 py-1 text-xs font-medium text-primary bg-surface border border-white/10 rounded-full"
+                class="px-3 py-1 text-xs font-medium text-primary bg-surface border border-white/10 rounded-full group-hover:border-accent/30 transition-colors duration-300"
               >
                 {{ tech }}
               </span>

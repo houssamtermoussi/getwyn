@@ -11,7 +11,7 @@ export default {
         surface: '#171717',
         primary: '#f3f4f6',
         secondary: '#9ca3af',
-        accent: '#8b5cf6', // Violet
+        accent: '#ef4444', // Red
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

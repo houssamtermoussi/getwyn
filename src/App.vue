@@ -28,6 +28,31 @@ onMounted(() => {
   })
 
   gsap.ticker.lagSmoothing(0)
+
+  // Floating background elements parallax
+  gsap.to(".floating-bg-1", {
+    y: "100%",
+    rotation: 45,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "body",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 2
+    }
+  })
+  
+  gsap.to(".floating-bg-2", {
+    y: "-80%",
+    rotation: -30,
+    ease: "none",
+    scrollTrigger: {
+      trigger: "body",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 3
+    }
+  })
 })
 
 onUnmounted(() => {
@@ -38,14 +63,51 @@ onUnmounted(() => {
 
 <template>
   <div class="relative w-full overflow-hidden selection:bg-accent selection:text-white">
-    <Hero />
-    <About />
-    <Services />
-    <Process />
-    <Portfolio />
+    <!-- Cinematic floating elements -->
+    <div class="floating-bg-1 fixed top-[10%] left-[5%] w-[40vw] h-[40vw] rounded-full bg-accent/5 blur-[120px] pointer-events-none z-0"></div>
+    <div class="floating-bg-2 fixed bottom-[10%] right-[5%] w-[30vw] h-[30vw] rounded-full bg-accent/5 blur-[100px] pointer-events-none z-0"></div>
+
+    <div class="relative z-10 flex flex-col gap-0">
+      <Hero />
+      <div class="relative z-20 bg-background shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
+        <About />
+      </div>
+      <div class="relative z-10 -mt-20 pt-20">
+        <Services />
+      </div>
+      <div class="relative z-20 bg-background shadow-[0_-20px_50px_rgba(0,0,0,0.5)]">
+        <Process />
+      </div>
+      <div class="relative z-10 -mt-20 pt-20">
+        <Portfolio />
+      </div>
+    </div>
     
-    <footer class="py-12 border-t border-surface text-center text-secondary text-sm">
-      <p>&copy; 2026 getwin. All rights reserved.</p>
+    <footer class="py-20 border-t border-white/5 bg-surface/20 backdrop-blur-md relative z-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+          <div class="text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-4">getwin.</h2>
+            <p class="text-secondary max-w-xs font-light">Crafting powerful digital products that are both beautiful and functional.</p>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-8 md:gap-16 text-center md:text-right">
+            <div>
+              <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Email Us</p>
+              <a href="mailto:hello@getwin.studio" class="text-xl text-white hover:text-accent transition-colors duration-300">hello@getwin.studio</a>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Call Us</p>
+              <a href="tel:+1234567890" class="text-xl text-white hover:text-accent transition-colors duration-300">+1 (234) 567-890</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-secondary text-xs">
+          <p>&copy; 2026 getwin. All rights reserved.</p>
+         
+        </div>
+      </div>
     </footer>
   </div>
 </template>

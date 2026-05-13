@@ -26,7 +26,7 @@ onMounted(() => {
       trigger: ".hero-section",
       start: "top top",
       end: "bottom top",
-      scrub: true
+      scrub: 1.5
     }
   })
 })
@@ -34,7 +34,7 @@ onMounted(() => {
 
 <template>
   <section class="hero-section relative h-screen flex flex-col justify-center items-center overflow-hidden">
-    <div ref="heroBg" class="absolute inset-0 w-full h-[130%] -top-[15%] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/20 via-background to-background -z-10"></div>
+    <div ref="heroBg" class="absolute inset-0 w-full h-[150%] -top-[25%] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/20 via-background to-background -z-10"></div>
     
     <div class="container mx-auto px-6 text-center z-10">
       <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-6 lowercase">

@@ -24,15 +24,15 @@ const cardsRef = ref<HTMLElement[]>([])
 
 onMounted(() => {
   cardsRef.value.forEach((card, index) => {
-    // Parallax effect on scroll
+    // Stronger Parallax effect on scroll
     gsap.to(card, {
-      y: (index + 1) * -40,
-      ease: "none",
+      y: (index + 1) * -80,
+      ease: "power1.inOut",
       scrollTrigger: {
         trigger: ".services-section",
         start: "top bottom",
         end: "bottom top",
-        scrub: true
+        scrub: 1.5
       }
     })
 
@@ -64,9 +64,9 @@ onMounted(() => {
           v-for="(service, index) in services" 
           :key="index"
           ref="cardsRef"
-          class="group bg-surface p-10 rounded-2xl border border-white/5 hover:border-accent/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(139,92,246,0.1)] relative overflow-hidden flex flex-col"
+          class="group bg-surface/80 backdrop-blur-md p-10 rounded-2xl border border-white/5 hover:border-accent/50 transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_0_40px_rgba(239,68,68,0.15)] relative overflow-hidden flex flex-col"
         >
-          <div class="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
           
           <div class="text-accent mb-6" v-html="service.icon"></div>
           <h3 class="text-2xl font-semibold mb-4 text-white group-hover:text-accent transition-colors duration-300">{{ service.title }}</h3>

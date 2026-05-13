@@ -6,7 +6,8 @@ const steps = [
   { num: '01', title: 'Discussion', desc: 'We start by understanding your vision, goals, and technical requirements.' },
   { num: '02', title: 'Design', desc: 'Crafting wireframes and premium UI/UX designs tailored to your brand identity.' },
   { num: '03', title: 'Development', desc: 'Building scalable and optimized solutions with modern technologies.' },
-  { num: '04', title: 'Delivery', desc: 'Rigorous testing, deployment, and ongoing support for a flawless launch.' }
+  { num: '04', title: 'Delivery', desc: 'Rigorous testing, deployment, and ongoing support for a flawless launch.' },
+  { num: '05', title: 'Client Support', desc: 'Continuous maintenance, updates, and dedicated support to ensure your product thrives.' }
 ]
 
 const stepsRef = ref<HTMLElement[]>([])
@@ -30,15 +31,18 @@ onMounted(() => {
   stepsRef.value.forEach((step, index) => {
     const isEven = index % 2 === 0
     gsap.fromTo(step,
-      { x: isEven ? -50 : 50, opacity: 0 },
+      { x: isEven ? -100 : 100, y: 50, opacity: 0 },
       {
         x: 0,
+        y: 0,
         opacity: 1,
-        duration: 0.8,
-        ease: "power3.out",
+        duration: 1,
+        ease: "power4.out",
         scrollTrigger: {
           trigger: step,
           start: "top 85%",
+          end: "top 50%",
+          scrub: 1
         }
       }
     )
@@ -62,11 +66,11 @@ onMounted(() => {
             v-for="(step, index) in steps" 
             :key="index"
             ref="stepsRef"
-            class="relative flex flex-col md:flex-row items-center w-full"
+            class="relative flex flex-col md:flex-row items-center w-full group"
             :class="index % 2 === 0 ? 'md:flex-row-reverse' : ''"
           >
             <!-- Timeline Dot -->
-            <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-background border-2 border-accent -translate-x-1/2 z-10 shadow-[0_0_15px_rgba(139,92,246,0.6)]"></div>
+            <div class="absolute left-6 md:left-1/2 w-4 h-4 rounded-full bg-background border-2 border-accent -translate-x-1/2 z-10 shadow-[0_0_15px_rgba(239,68,68,0.6)] group-hover:shadow-[0_0_25px_rgba(239,68,68,1)] group-hover:scale-125 transition-all duration-500"></div>
             
             <div class="w-full md:w-1/2 pl-16 md:pl-0" :class="index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'">
               <div class="text-accent text-sm font-bold tracking-widest mb-2 font-mono">{{ step.num }}</div>
