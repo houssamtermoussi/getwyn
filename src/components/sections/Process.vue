@@ -7,7 +7,8 @@ const steps = [
   { num: '02', title: 'Design', desc: 'Crafting wireframes and premium UI/UX designs tailored to your brand identity.' },
   { num: '03', title: 'Development', desc: 'Building scalable and optimized solutions with modern technologies.' },
   { num: '04', title: 'Delivery', desc: 'Rigorous testing, deployment, and ongoing support for a flawless launch.' },
-  { num: '05', title: 'Client Support', desc: 'Continuous maintenance, updates, and dedicated support to ensure your product thrives.' }
+  { num: '05', title: 'Accompagnement', desc: 'Personalized guidance and strategic follow-up to ensure long-term success and growth.' },
+  { num: '06', title: 'Client Support', desc: 'Continuous maintenance, updates, and dedicated support to ensure your product thrives.' }
 ]
 
 const stepsRef = ref<HTMLElement[]>([])

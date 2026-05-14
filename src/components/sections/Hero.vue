@@ -11,12 +11,12 @@ onMounted(() => {
   
   tl.fromTo(heroTitle.value, 
     { y: 100, opacity: 0 }, 
-    { y: 0, opacity: 1, duration: 1, ease: "power4.out" }
+    { y: 0, opacity: 1, duration: 1.2, ease: "expo.out" }
   )
   .fromTo(heroSlogan.value,
-    { y: 50, opacity: 0 },
-    { y: 0, opacity: 1, duration: 1, ease: "power3.out" },
-    "-=0.6"
+    { y: 20, opacity: 0, letterSpacing: "0.5em" },
+    { y: 0, opacity: 1, letterSpacing: "0.15em", duration: 1.5, ease: "power4.out" },
+    "-=0.8"
   )
 
   gsap.to(heroBg.value, {
@@ -37,11 +37,14 @@ onMounted(() => {
     <div ref="heroBg" class="absolute inset-0 w-full h-[150%] -top-[25%] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/20 via-background to-background -z-10"></div>
     
     <div class="container mx-auto px-6 text-center z-10">
-      <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-6 lowercase">
-        getwyn.
+      <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-6">
+        Getwyn.
       </h1>
-      <p ref="heroSlogan" class="text-xl md:text-2xl text-secondary font-light tracking-wide max-w-2xl mx-auto">
-        Custom-built digital experiences.
+      <p ref="heroSlogan" class="text-xl md:text-3xl text-white font-light tracking-wide max-w-3xl mx-auto uppercase">
+        <span class="text-accent font-bold">Get</span> 
+        <span class="text-accent font-bold"> w</span>hat 
+        <span class="text-accent font-bold">y</span>ou 
+        <span class="text-accent font-bold">n</span>eed
       </p>
     </div>
   </section>
