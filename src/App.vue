@@ -103,7 +103,7 @@ onUnmounted(() => {
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center gap-10">
           <div class="text-center md:text-left">
-            <h2 class="text-3xl font-bold mb-4">getwyn.</h2>
+            <h2 class="text-5xl font-bold mb-4">getwyn.</h2>
             <p class="text-secondary max-w-xs font-light">Crafting powerful digital products that are both beautiful and functional.</p>
           </div>
           

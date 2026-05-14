@@ -65,12 +65,12 @@ onMounted(() => {
   <section class="hero-section relative h-screen flex flex-col justify-center items-center overflow-hidden">
     <div ref="heroBg" class="absolute inset-0 w-full h-[150%] -top-[25%] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-accent/20 via-background to-background -z-10"></div>
     
-    <div class="container mx-auto px-6 text-center z-10 flex flex-col items-center -mt-56 md:-mt-96">
-      <div ref="heroLogoParallax" class="flex justify-center mb-10 md:mb-14">
-        <img ref="heroLogo" src="/logo_getwyn.png" alt="Getwyn Logo" class="h-40 md:h-56 w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]" />
+    <div class="container mx-auto px-6 text-center z-10 flex flex-col items-center -mt-48 md:-mt-80">
+      <div ref="heroLogoParallax" class="flex justify-center mb-0 md:mb-2 z-10 relative">
+        <img ref="heroLogo" src="/logo_getwyn.png" alt="Getwyn Logo" class="h-64 md:h-[450px] max-h-[60vh] w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]" />
       </div>
       
-      <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-6 py-4">
+      <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-[-1.5rem] pb-8 pt-2 -mt-4 md:-mt-8 relative z-20 leading-none">
         Getwyn.
       </h1>
       <p ref="heroSlogan" class="text-xl md:text-3xl text-white font-light tracking-widest max-w-3xl mx-auto">
