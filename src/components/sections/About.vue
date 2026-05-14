@@ -1,8 +1,17 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
+import { i18n } from '../../i18n'
 
 const cardRef = ref<HTMLElement | null>(null)
+
+const renderWithHighlights = (text: string, highlights: Record<string, string>) => {
+  let result = text
+  for (const [key, value] of Object.entries(highlights)) {
+    result = result.replace(`{${key}}`, `<span class="text-accent font-semibold">${value}</span>`)
+  }
+  return result
+}
 
 onMounted(() => {
   if (cardRef.value) {
@@ -45,18 +54,12 @@ onMounted(() => {
       >
         <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
         
-        <h3 class="text-sm uppercase tracking-widest text-secondary mb-12 font-mono group-hover:text-white transition-colors duration-300">About getwyn.</h3>
+        <h3 class="text-sm uppercase tracking-widest text-secondary mb-12 font-mono group-hover:text-white transition-colors duration-300">{{ i18n.t('about.title') }}</h3>
         
         <div class="space-y-8 text-2xl md:text-4xl font-light leading-tight text-primary">
-          <p>
-            We are a digital development studio focused on building <span class="text-accent font-semibold">modern</span>, clean and <span class="text-accent font-semibold">scalable</span> digital experiences.
-          </p>
-          <p class="text-secondary/80">
-            We design and develop custom web, mobile, and desktop solutions tailored to each client’s needs. Every project we deliver is crafted with attention to detail, <span class="text-accent font-semibold">performance</span>, and <span class="text-accent font-semibold">user experience</span>.
-          </p>
-          <p>
-            Our goal is simple: turn ideas into <span class="text-accent font-semibold">powerful digital products</span> that are both <span class="text-accent font-semibold">beautiful</span> and <span class="text-accent font-semibold">functional</span>.
-          </p>
+          <p v-html="renderWithHighlights(i18n.t('about.p1'), { modern: i18n.t('about.p1_highlights.modern'), scalable: i18n.t('about.p1_highlights.scalable') })"></p>
+          <p class="text-secondary/80" v-html="renderWithHighlights(i18n.t('about.p2'), { performance: i18n.t('about.p2_highlights.performance'), ux: i18n.t('about.p2_highlights.ux') })"></p>
+          <p v-html="renderWithHighlights(i18n.t('about.p3'), { products: i18n.t('about.p3_highlights.products'), beautiful: i18n.t('about.p3_highlights.beautiful'), functional: i18n.t('about.p3_highlights.functional') })"></p>
         </div>
       </div>
     </div>

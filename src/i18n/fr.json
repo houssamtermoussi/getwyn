@@ -1,0 +1,115 @@
+{
+  "common": {
+    "get": "OBTENEZ",
+    "what": "C",
+    "you": "D",
+    "need": "B"
+  },
+  "hero": {
+    "title": "Getwyn.",
+    "tagline": {
+      "get": "OBTENEZ ",
+      "what": "e dont",
+      "you": "ous avez",
+      "need": "esoin",
+      "w": "C",
+      "y": "V",
+      "n": "B"
+    }
+  },
+  "about": {
+    "title": "À propos de getwyn.",
+    "p1": "Nous sommes un studio de développement numérique axé sur la création d'expériences numériques {modern}, épurées et {scalable}.",
+    "p1_highlights": {
+      "modern": "modernes",
+      "scalable": "évolutives"
+    },
+    "p2": "Nous concevons et développons des solutions web, mobiles et de bureau sur mesure, adaptées aux besoins de chaque client. Chaque projet que nous livrons est conçu avec une attention particulière aux détails, à la {performance} et à l' {ux}.",
+    "p2_highlights": {
+      "performance": "performance",
+      "ux": "expérience utilisateur"
+    },
+    "p3": "Notre objectif est simple : transformer vos idées en {products}, à la fois {beautiful} et {functional}.",
+    "p3_highlights": {
+      "products": "produits numériques puissants",
+      "beautiful": "beaux",
+      "functional": "fonctionnels"
+    }
+  },
+  "services": {
+    "title": "Services.",
+    "list": [
+      {
+        "title": "Développement Web",
+        "description": "Des sites web modernes, rapides et responsifs conçus avec des technologies de pointe. Des pages de destination aux applications web complexes."
+      },
+      {
+        "title": "Applications Mobiles",
+        "description": "Applications mobiles natives et multiplateformes conçues pour des expériences utilisateur fluides sur les appareils iOS et Android."
+      },
+      {
+        "title": "Logiciels / Bureau",
+        "description": "Applications de bureau robustes et évolutives et solutions logicielles personnalisées adaptées à vos opérations commerciales spécifiques."
+      }
+    ]
+  },
+  "process": {
+    "title": "Notre Processus.",
+    "steps": [
+      { "title": "Discussion", "desc": "Nous commençons par comprendre votre vision, vos objectifs et vos exigences techniques." },
+      { "title": "Design", "desc": "Création de maquettes et de designs UI/UX premium adaptés à l'identité de votre marque." },
+      { "title": "Développement", "desc": "Construction de solutions évolutives et optimisées avec des technologies modernes." },
+      { "title": "Livraison", "desc": "Tests rigoureux, déploiement et support continu pour un lancement impeccable." },
+      { "title": "Accompagnement", "desc": "Conseils personnalisés et suivi stratégique pour assurer un succès et une croissance à long terme." },
+      { "title": "Support Client", "desc": "Maintenance continue, mises à jour et support dédié pour que votre produit prospère." }
+    ]
+  },
+  "portfolio": {
+    "title": "Projets Sélectionnés.",
+    "subtitle": "Un aperçu de certains de nos projets récents où le design rencontre une architecture évolutive.",
+    "projects": [
+      {
+        "title": "Gestion de Cabinet Médical",
+        "desc": "Une suite logicielle complète conçue pour simplifier les opérations des cabinets médicaux, avec une planification avancée des patients et une facturation fluide."
+      },
+      {
+        "title": "Gestion de Clinique",
+        "desc": "Une plateforme d'administration de clinique intuitive et de pointe. Conçue pour la haute performance, elle optimise les flux de travail quotidiens."
+      },
+      {
+        "title": "Gestion d'Étude Notariale",
+        "desc": "Une plateforme cloud hautement sécurisée pour les études notariales. Elle assure un suivi méticuleux des documents et la protection des données clients."
+      },
+      {
+        "title": "Système de Gestion Commerciale",
+        "desc": "Une solution d'entreprise robuste offrant des analyses en temps réel, un suivi des stocks et des mesures de performance des ventes."
+      },
+      {
+        "title": "Gestion de Magasin d'Optique",
+        "desc": "Un système de point de vente et d'inventaire tout-en-un élégant pour les magasins d'optique. Il gère les dossiers de prescription et les stocks."
+      },
+      {
+        "title": "Gestion de Centre Auditif",
+        "desc": "Une application spécialisée conçue pour améliorer l'expérience des patients dans les centres auditifs. Gestion des données d'audiologie et planification."
+      },
+      {
+        "title": "Gestion de Cabinet d'Expertise",
+        "desc": "Un tableau de bord dynamique pour les experts en assurance. Il accélère le traitement des sinistres et facilite la gestion des preuves."
+      },
+      {
+        "title": "Site E-commerce",
+        "desc": "Une boutique numérique sophistiquée optimisée pour la conversion. Esthétique impeccable et temps de chargement ultra-rapides."
+      },
+      {
+        "title": "Solutions Applicatives Sur Mesure",
+        "desc": "Architecture logicielle de pointe conçue pour relever des défis opérationnels uniques. Des applications évolutives et pérennes."
+      }
+    ]
+  },
+  "footer": {
+    "desc": "Créer des produits numériques puissants qui sont à la fois beaux et fonctionnels.",
+    "email": "Écrivez-nous",
+    "call": "Appelez-nous",
+    "rights": "Tous droits réservés."
+  }
+}

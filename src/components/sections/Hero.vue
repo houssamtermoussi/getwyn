@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import gsap from 'gsap'
+import { i18n } from '../../i18n'
 
 const heroTitle = ref<HTMLElement | null>(null)
 const heroSlogan = ref<HTMLElement | null>(null)
@@ -71,13 +72,13 @@ onMounted(() => {
       </div>
       
       <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-[-1.5rem] pb-8 pt-2 -mt-4 md:-mt-8 relative z-20 leading-none">
-        Getwyn.
+        {{ i18n.t('hero.title') }}
       </h1>
       <p ref="heroSlogan" class="text-xl md:text-3xl text-white font-light tracking-widest max-w-3xl mx-auto">
-        <span class="text-accent font-bold">GET</span> 
-        <span class="text-accent font-bold"> W</span>hat 
-        <span class="text-accent font-bold">Y</span>ou 
-        <span class="text-accent font-bold">N</span>eed
+        <span class="text-accent font-bold">{{ i18n.t('hero.tagline.get') }}</span> 
+        <span class="text-accent font-bold"> {{ i18n.t('hero.tagline.w') }}</span>{{ i18n.t('hero.tagline.what') }}
+        <span class="text-accent font-bold"> {{ i18n.t('hero.tagline.y') }}</span>{{ i18n.t('hero.tagline.you') }}
+        <span class="text-accent font-bold"> {{ i18n.t('hero.tagline.n') }}</span>{{ i18n.t('hero.tagline.need') }}
       </p>
     </div>
   </section>

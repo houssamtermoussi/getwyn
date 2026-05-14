@@ -9,6 +9,8 @@ import About from './components/sections/About.vue'
 import Services from './components/sections/Services.vue'
 import Process from './components/sections/Process.vue'
 import Portfolio from './components/sections/Portfolio.vue'
+import LanguageSwitcher from './components/LanguageSwitcher.vue'
+import { i18n } from './i18n'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -77,6 +79,7 @@ onUnmounted(() => {
 
 <template>
   <div class="relative w-full overflow-hidden selection:bg-accent selection:text-white">
+    <LanguageSwitcher />
     <!-- Cinematic floating elements -->
     <div class="floating-bg-1 fixed top-[10%] left-[5%] w-[40vw] h-[40vw] rounded-full bg-accent/5 blur-[120px] pointer-events-none z-0"></div>
     <div class="floating-bg-2 fixed bottom-[10%] right-[5%] w-[30vw] h-[30vw] rounded-full bg-accent/5 blur-[100px] pointer-events-none z-0"></div>
@@ -104,23 +107,23 @@ onUnmounted(() => {
         <div class="flex flex-col md:flex-row justify-between items-center gap-10">
           <div class="text-center md:text-left">
             <h2 class="text-5xl font-bold mb-4">getwyn.</h2>
-            <p class="text-secondary max-w-xs font-light">Crafting powerful digital products that are both beautiful and functional.</p>
+            <p class="text-secondary max-w-xs font-light">{{ i18n.t('footer.desc') }}</p>
           </div>
           
           <div class="flex flex-col md:flex-row gap-8 md:gap-16 text-center md:text-right">
             <div>
-              <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Email Us</p>
-              <a href="mailto:hello@getwyn.studio" class="text-xl text-white hover:text-accent transition-colors duration-300">getwyn.ma@gmail.com</a>
+              <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">{{ i18n.t('footer.email') }}</p>
+              <a href="mailto:getwyn.ma@gmail.com" class="text-xl text-white hover:text-accent transition-colors duration-300">getwyn.ma@gmail.com</a>
             </div>
             <div>
-              <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Call Us</p>
+              <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">{{ i18n.t('footer.call') }}</p>
               <a href="tel:+1234567890" class="text-xl text-white hover:text-accent transition-colors duration-300">+1 (234) 567-890</a>
             </div>
           </div>
         </div>
         
         <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-secondary text-xs">
-          <p>&copy; 2026 getwyn. All rights reserved.</p>
+          <p>&copy; 2026 getwyn. {{ i18n.t('footer.rights') }}</p>
          
         </div>
       </div>

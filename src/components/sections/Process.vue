@@ -1,15 +1,16 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import gsap from 'gsap'
+import { i18n } from '../../i18n'
 
-const steps = [
-  { num: '01', title: 'Discussion', desc: 'We start by understanding your vision, goals, and technical requirements.' },
-  { num: '02', title: 'Design', desc: 'Crafting wireframes and premium UI/UX designs tailored to your brand identity.' },
-  { num: '03', title: 'Development', desc: 'Building scalable and optimized solutions with modern technologies.' },
-  { num: '04', title: 'Delivery', desc: 'Rigorous testing, deployment, and ongoing support for a flawless launch.' },
-  { num: '05', title: 'Accompagnement', desc: 'Personalized guidance and strategic follow-up to ensure long-term success and growth.' },
-  { num: '06', title: 'Client Support', desc: 'Continuous maintenance, updates, and dedicated support to ensure your product thrives.' }
-]
+const steps = computed(() => [
+  { num: '01', title: i18n.t('process.steps.0.title'), desc: i18n.t('process.steps.0.desc') },
+  { num: '02', title: i18n.t('process.steps.1.title'), desc: i18n.t('process.steps.1.desc') },
+  { num: '03', title: i18n.t('process.steps.2.title'), desc: i18n.t('process.steps.2.desc') },
+  { num: '04', title: i18n.t('process.steps.3.title'), desc: i18n.t('process.steps.3.desc') },
+  { num: '05', title: i18n.t('process.steps.4.title'), desc: i18n.t('process.steps.4.desc') },
+  { num: '06', title: i18n.t('process.steps.5.title'), desc: i18n.t('process.steps.5.desc') }
+])
 
 const stepsRef = ref<HTMLElement[]>([])
 const progressLine = ref<HTMLElement | null>(null)
@@ -54,7 +55,7 @@ onMounted(() => {
 <template>
   <section class="process-section py-32 md:py-48 px-6 bg-surface/20">
     <div class="container mx-auto max-w-5xl">
-      <h2 class="text-4xl md:text-5xl font-bold mb-24 text-center">Our Process.</h2>
+      <h2 class="text-4xl md:text-5xl font-bold mb-24 text-center">{{ i18n.t('process.title') }}</h2>
       
       <div class="process-container relative">
         <!-- Vertical Line -->

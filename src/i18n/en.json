@@ -1,0 +1,115 @@
+{
+  "common": {
+    "get": "GET",
+    "what": "W",
+    "you": "Y",
+    "need": "N"
+  },
+  "hero": {
+    "title": "Getwyn.",
+    "tagline": {
+      "get": "GET",
+      "what": "hat",
+      "you": "ou",
+      "need": "eed",
+      "w": "W",
+      "y": "Y",
+      "n": "N"
+    }
+  },
+  "about": {
+    "title": "About getwyn.",
+    "p1": "We are a digital development studio focused on building {modern}, clean and {scalable} digital experiences.",
+    "p1_highlights": {
+      "modern": "modern",
+      "scalable": "scalable"
+    },
+    "p2": "We design and develop custom web, mobile, and desktop solutions tailored to each client’s needs. Every project we deliver is crafted with attention to detail, {performance}, and {ux}.",
+    "p2_highlights": {
+      "performance": "performance",
+      "ux": "user experience"
+    },
+    "p3": "Our goal is simple: turn ideas into {products} that are both {beautiful} and {functional}.",
+    "p3_highlights": {
+      "products": "powerful digital products",
+      "beautiful": "beautiful",
+      "functional": "functional"
+    }
+  },
+  "services": {
+    "title": "Services.",
+    "list": [
+      {
+        "title": "Web Development",
+        "description": "Modern, fast, and responsive websites built with cutting-edge technologies. From landing pages to complex web applications."
+      },
+      {
+        "title": "Mobile Applications",
+        "description": "Native and cross-platform mobile apps designed for seamless user experiences on iOS and Android devices."
+      },
+      {
+        "title": "Desktop / Software",
+        "description": "Robust, scalable desktop applications and custom software solutions tailored to your specific business operations."
+      }
+    ]
+  },
+  "process": {
+    "title": "Our Process.",
+    "steps": [
+      { "title": "Discussion", "desc": "We start by understanding your vision, goals, and technical requirements." },
+      { "title": "Design", "desc": "Crafting wireframes and premium UI/UX designs tailored to your brand identity." },
+      { "title": "Development", "desc": "Building scalable and optimized solutions with modern technologies." },
+      { "title": "Delivery", "desc": "Rigorous testing, deployment, and ongoing support for a flawless launch." },
+      { "title": "Accompagnement", "desc": "Personalized guidance and strategic follow-up to ensure long-term success and growth." },
+      { "title": "Client Support", "desc": "Continuous maintenance, updates, and dedicated support to ensure your product thrives." }
+    ]
+  },
+  "portfolio": {
+    "title": "Selected Works.",
+    "subtitle": "A glimpse into some of our recent projects where design meets scalable architecture.",
+    "projects": [
+      {
+        "title": "Medical Practice Management",
+        "desc": "A comprehensive software suite designed to streamline medical practice operations, featuring advanced patient scheduling, electronic health records, and seamless billing integration."
+      },
+      {
+        "title": "Clinic Management",
+        "desc": "An intuitive, state-of-the-art clinic administration platform. Built for high performance, it optimizes daily workflows, from appointment booking to resource allocation."
+      },
+      {
+        "title": "Notary Office Management",
+        "desc": "A highly secure, cloud-based platform tailored for notary offices. It ensures meticulous document tracking, automated compliance checks, and client data protection."
+      },
+      {
+        "title": "Commercial Management System",
+        "desc": "A robust enterprise solution providing real-time analytics, inventory tracking, and sales performance metrics. Engineered to scale with growing commercial demands."
+      },
+      {
+        "title": "Optical Store Management",
+        "desc": "An elegant, all-in-one point of sale and inventory system specifically crafted for optical stores. It seamlessly handles prescription records, stock levels, and customer relationships."
+      },
+      {
+        "title": "Hearing Aid Center Management",
+        "desc": "A specialized application designed to elevate the patient experience at hearing aid centers. Features encompass audiology data management, follow-up scheduling, and integrated billing."
+      },
+      {
+        "title": "Claims Expertise Firm Management",
+        "desc": "A dynamic, high-end dashboard empowering insurance experts. It accelerates claims processing, facilitates evidence management, and delivers automated, comprehensive reporting."
+      },
+      {
+        "title": "E-commerce Website",
+        "desc": "A sophisticated, conversion-optimized digital storefront. Delivered with flawless aesthetics and lightning-fast load times, it provides an unparalleled online shopping experience."
+      },
+      {
+        "title": "Custom-Built Application Solutions",
+        "desc": "Bespoke, cutting-edge software architecture crafted to address unique operational challenges. From conceptual design to deployment, we build scalable, future-proof applications."
+      }
+    ]
+  },
+  "footer": {
+    "desc": "Crafting powerful digital products that are both beautiful and functional.",
+    "email": "Email Us",
+    "call": "Call Us",
+    "rights": "All rights reserved."
+  }
+}

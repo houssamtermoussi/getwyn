@@ -1,63 +1,64 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import gsap from 'gsap'
+import { i18n } from '../../i18n'
 
-const projects = [
+const projects = computed(() => [
   {
-    title: 'Medical Practice Management',
-    desc: 'A comprehensive software suite designed to streamline medical practice operations, featuring advanced patient scheduling, electronic health records, and seamless billing integration.',
+    title: i18n.t('portfolio.projects.0.title'),
+    desc: i18n.t('portfolio.projects.0.desc'),
     tech: ['Vue.js', 'Node.js', 'PostgreSQL'],
     image: '/projects/medical.png'
   },
   {
-    title: 'Clinic Management',
-    desc: 'An intuitive, state-of-the-art clinic administration platform. Built for high performance, it optimizes daily workflows, from appointment booking to resource allocation.',
+    title: i18n.t('portfolio.projects.1.title'),
+    desc: i18n.t('portfolio.projects.1.desc'),
     tech: ['React', 'Express', 'MongoDB'],
     image: '/projects/clinic.png'
   },
   {
-    title: 'Notary Office Management',
-    desc: 'A highly secure, cloud-based platform tailored for notary offices. It ensures meticulous document tracking, automated compliance checks, and client data protection.',
+    title: i18n.t('portfolio.projects.2.title'),
+    desc: i18n.t('portfolio.projects.2.desc'),
     tech: ['Angular', 'Spring Boot', 'AWS'],
     image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop'
   },
   {
-    title: 'Commercial Management System',
-    desc: 'A robust enterprise solution providing real-time analytics, inventory tracking, and sales performance metrics. Engineered to scale with growing commercial demands.',
+    title: i18n.t('portfolio.projects.3.title'),
+    desc: i18n.t('portfolio.projects.3.desc'),
     tech: ['Vue.js', 'Laravel', 'MySQL'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop'
   },
   {
-    title: 'Optical Store Management',
-    desc: 'An elegant, all-in-one point of sale and inventory system specifically crafted for optical stores. It seamlessly handles prescription records, stock levels, and customer relationships.',
+    title: i18n.t('portfolio.projects.4.title'),
+    desc: i18n.t('portfolio.projects.4.desc'),
     tech: ['React Native', 'Firebase', 'Stripe'],
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'Hearing Aid Center Management',
-    desc: 'A specialized application designed to elevate the patient experience at hearing aid centers. Features encompass audiology data management, follow-up scheduling, and integrated billing.',
+    title: i18n.t('portfolio.projects.5.title'),
+    desc: i18n.t('portfolio.projects.5.desc'),
     tech: ['Vue.js', 'Tailwind', 'Python'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'Claims Expertise Firm Management',
-    desc: 'A dynamic, high-end dashboard empowering insurance experts. It accelerates claims processing, facilitates evidence management, and delivers automated, comprehensive reporting.',
+    title: i18n.t('portfolio.projects.6.title'),
+    desc: i18n.t('portfolio.projects.6.desc'),
     tech: ['React', 'GraphQL', 'Node.js'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'E-commerce Website',
-    desc: 'A sophisticated, conversion-optimized digital storefront. Delivered with flawless aesthetics and lightning-fast load times, it provides an unparalleled online shopping experience.',
+    title: i18n.t('portfolio.projects.7.title'),
+    desc: i18n.t('portfolio.projects.7.desc'),
     tech: ['Next.js', 'Tailwind', 'Shopify'],
     image: 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'Custom-Built Application Solutions',
-    desc: 'Bespoke, cutting-edge software architecture crafted to address unique operational challenges. From conceptual design to deployment, we build scalable, future-proof applications.',
+    title: i18n.t('portfolio.projects.8.title'),
+    desc: i18n.t('portfolio.projects.8.desc'),
     tech: ['Full-Stack', 'Cloud Native', 'Microservices'],
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop'
   }
-]
+])
 
 const projectCards = ref<HTMLElement[]>([])
 
@@ -85,9 +86,9 @@ onMounted(() => {
   <section class="portfolio-section py-32 md:py-48 px-6 relative">
     <div class="container mx-auto">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-24">
-        <h2 class="text-4xl md:text-5xl font-bold">Selected Works.</h2>
+        <h2 class="text-4xl md:text-5xl font-bold">{{ i18n.t('portfolio.title') }}</h2>
         <p class="text-secondary font-light mt-4 md:mt-0 max-w-md text-sm md:text-base">
-          A glimpse into some of our recent projects where design meets scalable architecture.
+          {{ i18n.t('portfolio.subtitle') }}
         </p>
       </div>
       
