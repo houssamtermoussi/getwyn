@@ -19,7 +19,7 @@
   },
   "about": {
     "title": "À propos de getwyn.",
-    "p1": "Nous sommes un studio de développement numérique axé sur la création d'expériences numériques {modern}, épurées et {scalable}.",
+    "p1": "Nous sommes une société de développement numérique axé sur la création d'expériences numériques {modern}, épurées et {scalable}.",
     "p1_highlights": {
       "modern": "modernes",
       "scalable": "évolutives"
@@ -57,7 +57,7 @@
     "title": "Notre Processus.",
     "steps": [
       { "title": "Discussion", "desc": "Nous commençons par comprendre votre vision, vos objectifs et vos exigences techniques." },
-      { "title": "Design", "desc": "Création de maquettes et de designs UI/UX premium adaptés à l'identité de votre marque." },
+      { "title": "Design", "desc": "Création de maquettes et de designs UI/UX premium adaptés à l'identité de votre entreprise." },
       { "title": "Développement", "desc": "Construction de solutions évolutives et optimisées avec des technologies modernes." },
       { "title": "Livraison", "desc": "Tests rigoureux, déploiement et support continu pour un lancement impeccable." },
       { "title": "Accompagnement", "desc": "Conseils personnalisés et suivi stratégique pour assurer un succès et une croissance à long terme." },

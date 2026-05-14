@@ -8,7 +8,7 @@
   "hero": {
     "title": "Getwyn.",
     "tagline": {
-      "get": "GET",
+      "get": "GET ",
       "what": "hat",
       "you": "ou",
       "need": "eed",
@@ -24,7 +24,7 @@
       "modern": "modern",
       "scalable": "scalable"
     },
-    "p2": "We design and develop custom web, mobile, and desktop solutions tailored to each client’s needs. Every project we deliver is crafted with attention to detail, {performance}, and {ux}.",
+    "p2": "We design and develop custom web, mobile, and desktop solutions customized to each client’s needs. Every project we deliver is crafted with attention to detail, {performance}, and {ux}.",
     "p2_highlights": {
       "performance": "performance",
       "ux": "user experience"
