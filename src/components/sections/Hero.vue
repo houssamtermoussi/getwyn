@@ -40,11 +40,11 @@ onMounted(() => {
       <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-6">
         Getwyn.
       </h1>
-      <p ref="heroSlogan" class="text-xl md:text-3xl text-white font-light tracking-wide max-w-3xl mx-auto uppercase">
-        <span class="text-accent font-bold">Get</span> 
-        <span class="text-accent font-bold"> w</span>hat 
-        <span class="text-accent font-bold">y</span>ou 
-        <span class="text-accent font-bold">n</span>eed
+      <p ref="heroSlogan" class="text-xl md:text-3xl text-white font-light tracking-widest max-w-3xl mx-auto">
+        <span class="text-accent font-bold">GET</span> 
+        <span class="text-accent font-bold"> W</span>hat 
+        <span class="text-accent font-bold">Y</span>ou 
+        <span class="text-accent font-bold">N</span>eed
       </p>
     </div>
   </section>
