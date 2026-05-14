@@ -110,7 +110,7 @@ onUnmounted(() => {
           <div class="flex flex-col md:flex-row gap-8 md:gap-16 text-center md:text-right">
             <div>
               <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Email Us</p>
-              <a href="mailto:hello@getwyn.studio" class="text-xl text-white hover:text-accent transition-colors duration-300">hello@getwyn.studio</a>
+              <a href="mailto:hello@getwyn.studio" class="text-xl text-white hover:text-accent transition-colors duration-300">getwyn.ma@gmail.com</a>
             </div>
             <div>
               <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Call Us</p>
