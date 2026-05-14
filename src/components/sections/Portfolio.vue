@@ -4,22 +4,58 @@ import gsap from 'gsap'
 
 const projects = [
   {
-    title: 'Lumina E-Commerce',
-    desc: 'A complete overhaul of a luxury brand e-commerce platform, focusing on seamless conversion and lightning-fast performance.',
-    tech: ['Vue.js', 'Tailwind', 'Shopify API'],
+    title: 'Medical Practice Management',
+    desc: 'A comprehensive software suite designed to streamline medical practice operations, featuring advanced patient scheduling, electronic health records, and seamless billing integration.',
+    tech: ['Vue.js', 'Node.js', 'PostgreSQL'],
+    image: '/projects/medical.png'
+  },
+  {
+    title: 'Clinic Management',
+    desc: 'An intuitive, state-of-the-art clinic administration platform. Built for high performance, it optimizes daily workflows, from appointment booking to resource allocation.',
+    tech: ['React', 'Express', 'MongoDB'],
+    image: '/projects/clinic.png'
+  },
+  {
+    title: 'Notary Office Management',
+    desc: 'A highly secure, cloud-based platform tailored for notary offices. It ensures meticulous document tracking, automated compliance checks, and client data protection.',
+    tech: ['Angular', 'Spring Boot', 'AWS'],
+    image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop'
+  },
+  {
+    title: 'Commercial Management System',
+    desc: 'A robust enterprise solution providing real-time analytics, inventory tracking, and sales performance metrics. Engineered to scale with growing commercial demands.',
+    tech: ['Vue.js', 'Laravel', 'MySQL'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop'
   },
   {
-    title: 'FinSync Dashboard',
-    desc: 'An intuitive data visualization and management dashboard for a leading financial technology startup.',
-    tech: ['React', 'D3.js', 'Node.js'],
+    title: 'Optical Store Management',
+    desc: 'An elegant, all-in-one point of sale and inventory system specifically crafted for optical stores. It seamlessly handles prescription records, stock levels, and customer relationships.',
+    tech: ['React Native', 'Firebase', 'Stripe'],
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop'
+  },
+  {
+    title: 'Hearing Aid Center Management',
+    desc: 'A specialized application designed to elevate the patient experience at hearing aid centers. Features encompass audiology data management, follow-up scheduling, and integrated billing.',
+    tech: ['Vue.js', 'Tailwind', 'Python'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
   },
   {
-    title: 'Vitality App',
-    desc: 'A cross-platform mobile application tracking patient wellness and seamlessly integrating with modern wearable devices.',
-    tech: ['React Native', 'Firebase', 'Redux'],
-    image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop'
+    title: 'Claims Expertise Firm Management',
+    desc: 'A dynamic, high-end dashboard empowering insurance experts. It accelerates claims processing, facilitates evidence management, and delivers automated, comprehensive reporting.',
+    tech: ['React', 'GraphQL', 'Node.js'],
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
+  },
+  {
+    title: 'E-commerce Website',
+    desc: 'A sophisticated, conversion-optimized digital storefront. Delivered with flawless aesthetics and lightning-fast load times, it provides an unparalleled online shopping experience.',
+    tech: ['Next.js', 'Tailwind', 'Shopify'],
+    image: 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070&auto=format&fit=crop'
+  },
+  {
+    title: 'Custom-Built Application Solutions',
+    desc: 'Bespoke, cutting-edge software architecture crafted to address unique operational challenges. From conceptual design to deployment, we build scalable, future-proof applications.',
+    tech: ['Full-Stack', 'Cloud Native', 'Microservices'],
+    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop'
   }
 ]
 
@@ -41,21 +77,6 @@ onMounted(() => {
         }
       }
     )
-    
-    // Stronger Parallax on image inside card
-    const img = card.querySelector('.portfolio-img')
-    if (img) {
-      gsap.to(img, {
-        y: "25%",
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: card,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: 1.5
-        }
-      })
-    }
   })
 })
 </script>
@@ -82,7 +103,7 @@ onMounted(() => {
             <img 
               :src="project.image" 
               :alt="project.title"
-              class="portfolio-img absolute -top-[10%] left-0 w-full h-[120%] object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
+              class="portfolio-img absolute top-0 left-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-700 ease-out"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60 group-hover:opacity-20 transition-opacity duration-500"></div>
           </div>
