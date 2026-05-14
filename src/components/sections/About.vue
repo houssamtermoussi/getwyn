@@ -14,21 +14,21 @@ onMounted(() => {
         trigger: ".about-section",
         start: "top bottom",
         end: "bottom top",
-        scrub: 1.5
+        scrub: 1
       }
     })
 
     // Reveal
     gsap.fromTo(cardRef.value,
-      { y: 100, opacity: 0 },
+      { y: 60, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        duration: 1.5,
+        duration: 1,
         ease: "power4.out",
         scrollTrigger: {
           trigger: cardRef.value,
-          start: "top 85%",
+          start: "top 95%",
         }
       }
     )
