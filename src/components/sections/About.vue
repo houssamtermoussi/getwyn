@@ -45,7 +45,7 @@ onMounted(() => {
       >
         <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
         
-        <h3 class="text-sm uppercase tracking-widest text-secondary mb-12 font-mono group-hover:text-white transition-colors duration-300">About getwin.</h3>
+        <h3 class="text-sm uppercase tracking-widest text-secondary mb-12 font-mono group-hover:text-white transition-colors duration-300">About getwyn.</h3>
         
         <div class="space-y-8 text-2xl md:text-4xl font-light leading-tight text-primary">
           <p>

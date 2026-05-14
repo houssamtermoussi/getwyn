@@ -38,7 +38,7 @@ onMounted(() => {
     
     <div class="container mx-auto px-6 text-center z-10">
       <h1 ref="heroTitle" class="text-7xl md:text-9xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-white to-secondary mb-6 lowercase">
-        getwin.
+        getwyn.
       </h1>
       <p ref="heroSlogan" class="text-xl md:text-2xl text-secondary font-light tracking-wide max-w-2xl mx-auto">
         Custom-built digital experiences.

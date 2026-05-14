@@ -103,14 +103,14 @@ onUnmounted(() => {
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center gap-10">
           <div class="text-center md:text-left">
-            <h2 class="text-3xl font-bold mb-4">getwin.</h2>
+            <h2 class="text-3xl font-bold mb-4">getwyn.</h2>
             <p class="text-secondary max-w-xs font-light">Crafting powerful digital products that are both beautiful and functional.</p>
           </div>
           
           <div class="flex flex-col md:flex-row gap-8 md:gap-16 text-center md:text-right">
             <div>
               <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Email Us</p>
-              <a href="mailto:hello@getwin.studio" class="text-xl text-white hover:text-accent transition-colors duration-300">hello@getwin.studio</a>
+              <a href="mailto:hello@getwyn.studio" class="text-xl text-white hover:text-accent transition-colors duration-300">hello@getwyn.studio</a>
             </div>
             <div>
               <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">Call Us</p>
@@ -120,7 +120,7 @@ onUnmounted(() => {
         </div>
         
         <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-secondary text-xs">
-          <p>&copy; 2026 getwin. All rights reserved.</p>
+          <p>&copy; 2026 getwyn. All rights reserved.</p>
          
         </div>
       </div>
