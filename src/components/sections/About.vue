@@ -56,7 +56,7 @@ onMounted(() => {
         
         <h3 class="text-sm uppercase tracking-widest text-secondary mb-12 font-mono group-hover:text-white transition-colors duration-300">{{ i18n.t('about.title') }}</h3>
         
-        <div class="space-y-8 text-2xl md:text-4xl font-light leading-tight text-primary">
+        <div class="space-y-8 text-2xl md:text-4xl font-light leading-[1.4] text-primary">
           <p v-html="renderWithHighlights(i18n.t('about.p1'), { modern: i18n.t('about.p1_highlights.modern'), scalable: i18n.t('about.p1_highlights.scalable') })"></p>
           <p class="text-secondary/80" v-html="renderWithHighlights(i18n.t('about.p2'), { performance: i18n.t('about.p2_highlights.performance'), ux: i18n.t('about.p2_highlights.ux') })"></p>
           <p v-html="renderWithHighlights(i18n.t('about.p3'), { products: i18n.t('about.p3_highlights.products'), beautiful: i18n.t('about.p3_highlights.beautiful'), functional: i18n.t('about.p3_highlights.functional') })"></p>
