@@ -32,7 +32,7 @@ const projects = computed(() => [
     title: i18n.t('portfolio.projects.4.title'),
     desc: i18n.t('portfolio.projects.4.desc'),
     tech: ['React Native', 'Firebase', 'Stripe'],
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2070&auto=format&fit=crop'
+    image: '/projects/optical.png'
   },
   {
     title: i18n.t('portfolio.projects.5.title'),

@@ -50,7 +50,7 @@ onMounted(() => {
     <div class="container mx-auto max-w-5xl">
       <div 
         ref="cardRef"
-        class="group bg-surface/40 backdrop-blur-xl p-12 md:p-20 rounded-[40px] border border-white/5 hover:border-accent/40 transition-all duration-700 hover:shadow-[0_20px_80px_rgba(239,68,68,0.1)] relative overflow-hidden"
+        class="group bg-surface/40 backdrop-blur-xl p-12 md:p-20 rounded-[40px] border border-white/5 hover:border-accent/40 transition-all duration-700 hover:shadow-[0_20px_80px_rgba(239,68,68,0.1)] relative"
       >
         <div class="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
         
