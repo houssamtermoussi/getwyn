@@ -8,13 +8,13 @@ const projects = computed(() => [
     title: i18n.t('portfolio.projects.0.title'),
     desc: i18n.t('portfolio.projects.0.desc'),
     tech: ['Vue.js', 'Node.js', 'PostgreSQL'],
-    image: '/projects/medical.png'
+    image: '/projects/medicale.png'
   },
   {
     title: i18n.t('portfolio.projects.1.title'),
     desc: i18n.t('portfolio.projects.1.desc'),
     tech: ['React', 'Express', 'MongoDB'],
-    image: '/projects/clinic.png'
+    image: '/projects/clinice.png'
   },
   {
     title: i18n.t('portfolio.projects.2.title'),
