@@ -7,55 +7,46 @@ const projects = computed(() => [
   {
     title: i18n.t('portfolio.projects.0.title'),
     desc: i18n.t('portfolio.projects.0.desc'),
-    tech: ['Vue.js', 'Node.js', 'PostgreSQL'],
     image: '/projects/medicale.png'
   },
   {
     title: i18n.t('portfolio.projects.1.title'),
     desc: i18n.t('portfolio.projects.1.desc'),
-    tech: ['React', 'Express', 'MongoDB'],
     image: '/projects/clinice.png'
   },
   {
     title: i18n.t('portfolio.projects.2.title'),
     desc: i18n.t('portfolio.projects.2.desc'),
-    tech: ['Angular', 'Spring Boot', 'AWS'],
     image: '/projects/notary.png'
   },
   {
     title: i18n.t('portfolio.projects.3.title'),
     desc: i18n.t('portfolio.projects.3.desc'),
-    tech: ['Vue.js', 'Laravel', 'MySQL'],
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop'
   },
   {
     title: i18n.t('portfolio.projects.4.title'),
     desc: i18n.t('portfolio.projects.4.desc'),
-    tech: ['React Native', 'Firebase', 'Stripe'],
     image: '/projects/optical.png'
   },
   {
     title: i18n.t('portfolio.projects.5.title'),
     desc: i18n.t('portfolio.projects.5.desc'),
-    tech: ['Vue.js', 'Tailwind', 'Python'],
     image: '/projects/oreille.png'
   },
   {
     title: i18n.t('portfolio.projects.6.title'),
     desc: i18n.t('portfolio.projects.6.desc'),
-    tech: ['React', 'GraphQL', 'Node.js'],
     image: '/projects/expertise.png'
   },
   {
     title: i18n.t('portfolio.projects.7.title'),
     desc: i18n.t('portfolio.projects.7.desc'),
-    tech: ['Next.js', 'Tailwind', 'Shopify'],
     image: '/projects/commerce.png'
   },
   {
     title: i18n.t('portfolio.projects.8.title'),
     desc: i18n.t('portfolio.projects.8.desc'),
-    tech: ['Full-Stack', 'Cloud Native', 'Microservices'],
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop'
   }
 ])
@@ -115,15 +106,7 @@ onMounted(() => {
             <p class="text-secondary font-light text-sm mb-4 leading-relaxed">
               {{ project.desc }}
             </p>
-            <div class="flex flex-wrap gap-2">
-              <span 
-                v-for="(tech, i) in project.tech" 
-                :key="i"
-                class="px-3 py-1 text-xs font-medium text-primary bg-surface border border-white/10 rounded-full group-hover:border-accent/30 transition-colors duration-300"
-              >
-                {{ tech }}
-              </span>
-            </div>
+
           </div>
         </div>
       </div>
