@@ -38,19 +38,19 @@ const projects = computed(() => [
     title: i18n.t('portfolio.projects.5.title'),
     desc: i18n.t('portfolio.projects.5.desc'),
     tech: ['Vue.js', 'Tailwind', 'Python'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
+    image: '/projects/oreille.png'
   },
   {
     title: i18n.t('portfolio.projects.6.title'),
     desc: i18n.t('portfolio.projects.6.desc'),
     tech: ['React', 'GraphQL', 'Node.js'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop'
+    image: '/projects/expertise.png'
   },
   {
     title: i18n.t('portfolio.projects.7.title'),
     desc: i18n.t('portfolio.projects.7.desc'),
     tech: ['Next.js', 'Tailwind', 'Shopify'],
-    image: 'https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070&auto=format&fit=crop'
+    image: '/projects/commerce.png'
   },
   {
     title: i18n.t('portfolio.projects.8.title'),
