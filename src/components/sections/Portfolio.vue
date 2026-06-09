@@ -20,7 +20,7 @@ const projects = computed(() => [
     title: i18n.t('portfolio.projects.2.title'),
     desc: i18n.t('portfolio.projects.2.desc'),
     tech: ['Angular', 'Spring Boot', 'AWS'],
-    image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=2006&auto=format&fit=crop'
+    image: '/projects/notary.png'
   },
   {
     title: i18n.t('portfolio.projects.3.title'),
