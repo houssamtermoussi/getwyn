@@ -117,7 +117,7 @@ onUnmounted(() => {
             </div>
             <div>
               <p class="text-xs uppercase tracking-widest text-accent font-bold mb-2">{{ i18n.t('footer.call') }}</p>
-              <a href="tel:+1234567890" class="text-xl text-white hover:text-accent transition-colors duration-300">+1 (234) 567-890</a>
+              <a href="tel:+1234567890" class="text-xl text-white hover:text-accent transition-colors duration-300">06 61 07 26 77</a>
             </div>
           </div>
         </div>
